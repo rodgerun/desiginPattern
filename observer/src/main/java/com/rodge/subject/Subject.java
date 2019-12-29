@@ -3,6 +3,8 @@ package com.rodge.subject;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.collections4.CollectionUtils;
+
 import com.rodge.observer.Observer;
 
 /**
@@ -27,6 +29,10 @@ public class Subject {
 	}
 	
 	public void notifyAllObservers() {
-		
+		if (CollectionUtils.isNotEmpty(observers)) {
+			for (Observer observer : observers) {
+				observer.update(this);
+			}
+		}
 	}
 }
