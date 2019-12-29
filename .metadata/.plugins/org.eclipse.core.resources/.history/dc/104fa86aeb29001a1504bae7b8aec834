@@ -1,0 +1,5 @@
+package com.rodge.observer;
+
+public interface Observer {
+
+}
