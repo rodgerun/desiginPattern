@@ -1,9 +1,0 @@
-package com.rodge.subject;
-/**
- * 消息类
- * @author rodge
- *
- */
-public class Subject {
-
-}
